@@ -1,13 +1,24 @@
 public class Main {
 
+    private Integer id;
+    private String name;
+    private String sex;
+
+    Main(){}
+
+    Main(Integer id,String name,String sex){
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+    }
+
+    @Override
+    public String toString() {
+        return id + ":" + name + ":" + sex;
+    }
+
     public static void main(String[] args) {
-        System.out.println("v3");
-        //六月 七号 修改
-        System.out.println("Hello World!");
-        int sum  = 0;
-        int a = 1;
-        int b = 2;
-        sum = a+b;
-        System.out.println(sum);
+        Main ex = new Main(1,"岳","女");
+        System.out.println(ex);
     }
 }
